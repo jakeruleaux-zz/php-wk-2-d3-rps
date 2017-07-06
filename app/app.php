@@ -15,9 +15,9 @@
     $app->get('/view_winner', function() use($app) {
     $winner = new RockPaperScissors;
     $bigWinner = $winner->playGame($_GET['first_input'], $_GET['second_input']);
-        return $app['twig']->render('game.html.twig', 'result' => $bigWinner);
+        return $app['twig']->render('game.html.twig'); 'result' => $bigWinner;
 
-  });      
+  });
 
         return $app;
 ?>
