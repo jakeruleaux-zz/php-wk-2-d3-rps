@@ -3,30 +3,7 @@
       class RockPaperScissors
 
       {
-
-          // private $first_input;
-          // private $second_input;
-          //
-          // function __construct()
-          //
-          // {
-          //   $this->first_input = "rock";
-          //   $this->second_input = "scissors";
-          // }
-          //
-          // function getFirstInput()
-          //
-          // {
-          //   return $this->first_input;
-          // }
-          //
-          // function getSecondInput()
-          // {
-          //   return $this->second_input;
-          // }
-
-          // $first_input = "rock";
-          // $second_input = "scissors";
+          // $result = "";
           function playGame($first_input, $second_input)
           {
 
@@ -43,8 +20,8 @@
             } elseif ($first_input == "scissors" && $second_input == "paper") {
               return "Player 1";
             } else {
-                                                                return "Draw";
-                                                              }
+              return "Draw";
+            }
       }
 }
  ?>
