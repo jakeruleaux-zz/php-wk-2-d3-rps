@@ -32,9 +32,11 @@
 
             if ($first_input == "rock" && $second_input == "scissors") {
               return "Player 1";
-            } else  {
+            } elseif ($first_input == "scissors" && $second_input == "rock") {
               return "Player 2";
-            }
+            } else {
+                                                                return "Draw";
+                                                              }
       }
 }
  ?>

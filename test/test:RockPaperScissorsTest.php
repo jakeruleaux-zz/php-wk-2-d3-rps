@@ -33,6 +33,19 @@
             $this->assertEquals("Player 2", $result);
         }
 
+        function testRockRock()
+        {
+            //Arrange
+            $test_rock_paper_scissors = new RockPaperScissors;
+            $first_input = "rock";
+            $second_input = "rock";
+
+            //Act
+            $result = $test_rock_paper_scissors->playGame($first_input, $second_input);
+
+            //Assert
+            $this->assertEquals("Draw", $result);
+        }
     }
 
 ?>
